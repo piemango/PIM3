@@ -1,0 +1,147 @@
+@font-face{
+   font-family: Mustica;
+   src: url(font/MusticaPro-SemiBold.otf);
+   /***font title***/
+}
+
+@font-face{
+    font-family: Dinomilk;
+    src: url(font/Dinomik.otf);
+}
+
+@font-face{
+    font-family: Mitn;
+    src: url(font/MiTNThin.ttf);
+}
+
+@font-face{
+    font-family: Kanit;
+    src: url(font/Kanit-SemiBold.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+/*****************************************home*****************************************/
+
+.home{
+    margin: 10rem;
+    margin-top: 8rem;
+    padding-bottom: 10rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.contrainer{
+    box-sizing: border-box;
+    padding: 10rem 17%;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    margin-left: 5rem;
+    margin-top: -0.8rem;
+    position: fixed;
+}
+
+.home img{
+    margin-bottom: -0.1rem;
+    width: 500px;
+    height:80px;
+}
+.home h1{
+    font-family: Mustica;
+    font-size: 2rem;
+    color: white;
+    margin-bottom:3rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 6rem;
+    position: relative;
+}
+.username{    
+    font-size: 2rem;
+    font-family: Dinomilk, Mitn;
+    padding-top: 0.5rem;
+    padding-bottom: 0.51rem;
+    box-sizing: border-box;
+    border-radius: 3rem;
+    border: none;
+    padding-left: 5.5rem;
+    padding-right: 2rem;  
+    margin-bottom: 1rem;
+    margin-top: 0.7rem ;
+    color: #23024D; 
+    width: 40rem;  
+    position: absolute; 
+    left: -4rem;
+}
+
+.username:focus{
+    background-color: #EEE2FD;
+    outline-style: none;
+    box-shadow:0 0 10px 0 #997EBC;
+    color: #997EBC;
+}
+
+.icon{
+    box-sizing: border-box;
+    position: absolute;
+    color: #23024D;
+    font-size: 2.5rem;
+    margin-left: -1.9rem;
+    top: 1.2rem;
+    cursor: none;
+    z-index: 1;
+}
+
+.btn{
+    font-family: Mustica;
+    position: absolute;
+    font-size: 2rem;
+    padding: 0.3rem;
+    border-radius: 1.5rem;
+    border: none;
+    width: 6rem;
+    left: 12.5rem;
+    top: 10rem;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+    background-color: #997EBC;
+    box-shadow: 0 0 20px 0 #997EBC;
+    color:white;
+    transition: 1s ease;
+}
+
+.error{
+    font-family: Kanit;
+    font-size: 1.6rem;
+    color: red; 
+    background-color: yellow;
+    width: 40rem;
+    top: 5.5rem;
+    left: -4rem;
+    position:absolute;
+
+}
+
+
+

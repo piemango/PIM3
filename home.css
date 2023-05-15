@@ -1,0 +1,267 @@
+@font-face{
+    font-family: Mustica;
+    src: url(font/MusticaPro-SemiBold.otf);
+    /***font title***/
+ }
+ 
+ @font-face{
+     font-family: Dinomilk;
+     src: url(font/Dinomik.otf);
+ }
+ 
+ @font-face{
+     font-family: Mitn;
+     src: url(font/MiTNThin.ttf);
+ }
+ 
+ *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+
+/*****************************************home*****************************************/
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    background: #F3F2F9;
+}
+
+.header{
+    z-index: 5;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+    background-color: #23024D;
+    width: 100%;
+    height: 13.1rem;
+    margin: 0;
+    position: relative;  
+    justify-content: center;
+    align-items: center;
+}
+
+.background-header{
+    background-color: #23024D;
+    width: 100%;
+    height: 13.1rem;
+    margin: 0;
+    position: fixed;
+    box-sizing: border-box;  
+    z-index: 5;
+}
+
+.background-header img{
+    object-fit: cover;
+    width: 100%; height: 13.1rem;
+    box-sizing: border-box;
+}
+
+.header .title-header{
+    position: fixed;
+    width: 500px;
+    height:80px;
+    top: 3rem;
+    z-index:6;
+    box-sizing: border-box;
+}
+
+.icon-bar{
+    z-index: 6;
+    width: 13rem;
+    height: 2rem;
+    background-color: #F3F2F9;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.5rem;
+    position: fixed;
+    top: 9.5rem;
+    padding-left: 1.5rem;
+    align-items: center;
+}
+
+.youtube i{
+    color: #6F4B9B;
+    font-size: 1.8rem;
+    margin-top: 0.1rem;
+    position: relative;
+}
+
+.back i{
+    color: #6F4B9B;
+    font-size: 1.8rem;
+    margin-top: 0.1rem;
+    position: relative;
+}
+
+.homepage i{
+    color: #6F4B9B;
+    font-size: 1.8rem;
+    margin-top: 0.1rem;
+    position: relative;
+}
+
+.icon-bar:hover .homepage i{
+    color: #6F4B9B;
+}
+
+.icon-bar:hover{
+    background-color: #997EBC;
+}
+
+.icon-bar:hover .back:hover i, .youtube:hover i{
+    color: white;
+    transition: 1s ease-out;
+}
+
+
+
+a:focus{
+    text-shadow: 0 0 10px #EEE2FD;
+}
+
+/*******************chat ****************************/
+.header-chat{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+    position: fixed;
+    height: 5rem;
+    width: 18.2rem;
+    background: #23024D;
+    right: 0;
+    top: 13rem;
+    z-index: 3;
+}
+
+.header-chat h1{
+    position: relative;
+    font-family: Mustica;
+    font-size: 2rem;
+    color: white;
+    margin-top: 0.5rem;
+    margin-left: 4.7rem;
+}
+
+.header-chat .chat-line{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 1rem;
+    right: 0;
+}
+
+/***********typ message************/
+
+.typing{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background: #6F4B9B;
+    width: 18.2rem;
+    height: 8rem;
+    right: 0;
+    top: 36rem;
+    z-index: 5;
+}
+
+.profile{
+    position:relative;
+    margin: 1rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 5rem;
+    background: white;
+    justify-content: center;
+}
+
+.profile img{
+    position: relative;
+    object-fit: cover;
+    width: 100%; height: 100%;
+
+}
+
+
+
+.nameuser {
+    display: grid;
+    position: relative;
+    background-color: #23024D;
+    top: 1.2rem;
+    height: 2rem;
+    padding-left:0.5rem;   
+    padding-right:0.5rem;  
+    font-size: 1rem;
+    color: #e7eaec;
+    font-family: Mitn;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+.send-message{
+    position: absolute;
+    margin: 0.5rem;
+    margin-top: 1.2rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    background-color: #997EBC;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.send-message:hover{
+    transform: scale(0.9);
+    transition: 0.5s ease-in;
+    box-shadow: 0 0 10px 0 #23024D;
+    background-color: #23024D;
+}
+.send-message i{
+    position: relative;
+    color: black;
+    transform: rotate(270deg);
+    box-sizing: border-box;
+}
+
+
+#bx-send:hover{
+    color: white;
+    text-underline-position: none;
+}
+
+.typ-box-1{
+    position: absolute;
+    top: 4.5rem;
+    left: 1rem;
+    width: 16rem;
+    height: 2.3rem;
+    font-size: 1.5rem;
+    font-family: Mitn;
+    color: #23024D;
+    background: #F8F2FF;
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.typ-box-1:focus{
+    background: #997EBC;
+    transform: scale(1.05);
+    font-size: 1.5rem;
+}
+
+
